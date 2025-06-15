@@ -108,7 +108,7 @@ Los datos se integran en un dashboard de Power BI con análisis interactivo por 
   - Red social preferida
 - **Predicciones del modelo IA** incorporadas como indicadores clave para análisis personalizado
 
-
+---
 
 Autores y Créditos
 
