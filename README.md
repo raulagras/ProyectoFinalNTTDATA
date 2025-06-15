@@ -21,7 +21,7 @@ Desarrollar un modelo de regresión para predecir la productividad (`actual_prod
 - Tiempo de pantalla antes de dormir
 - Interrupciones durante el trabajo
 
-Las predicciones se integran en un dashboard de Power BI con análisis interactivo por género, tipo de trabajo y red social preferida.
+Los datos se integran en un dashboard de Power BI con análisis interactivo por género, tipo de trabajo y red social preferida.
 
 ### 🧩 Aplicaciones
 
@@ -71,16 +71,17 @@ Las predicciones se integran en un dashboard de Power BI con análisis interacti
   - Conservación y revisión de outliers mediante **IQR**
 
 ### 2. Imputación de Nulos
-
-- **Imputación por KNN** (K-Nearest Neighbors) para variables numéricas
-- **Moda** para categorías faltantes
-- **Media o mediana**, según presencia de outliers, para variables continuas
+  Se llevan a cabo dos visiones:
+- **Imputación por KNN** (K-Nearest Neighbors) para variables numéricas y categóricas.
+  
+- **Media o mediana**, según presencia de outliers, para variables continuas y categóricas.
 
 ### 3. Modelado Predictivo con IA
 
 - **Preprocesamiento**:
   - `StandardScaler`, `LabelEncoder`
   - Selección de características: `SelectKBest`, `PCA`
+  - Ajuste de sesgos de distribución con funciones (log, sqrt)
 - **Modelos utilizados**:
   - `LinearRegression`
   - `RandomForestRegressor`
@@ -110,6 +111,7 @@ Las predicciones se integran en un dashboard de Power BI con análisis interacti
 
 
 Autores y Créditos
-Proyecto académico/descriptivo basado en datos públicos de Kaggle. Desarrollo realizado con herramientas de código abierto y tecnologías libres.
+
+**Agras Basanta Raúl, Esmoris Barreira Javier, García Porteiro Carlota, Marinovic Garrido Camila, Prado Darriba Aaron**
 
 Dataset original: Kaggle - Social Media vs Productivity
